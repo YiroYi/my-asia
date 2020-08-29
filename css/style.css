@@ -49,6 +49,27 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+/*LOGO*/
+.logo {
+  height: 7rem; }
+
+/*LOGO*/
+/*SEARCH*/
+.search__icon {
+  height: 2.25rem;
+  widows: 2.25rem; }
+
+/*SEARCH*/
+/*USER NAVIGATION*/
+.user-nav__icon {
+  height: 2.25rem;
+  widows: 2.25rem; }
+
+.user-nav__user-photo {
+  height: 3.75rem;
+  border-radius: 50%; }
+
+/*USER NAVIGATION*/
 .container {
   max-width: 100rem;
   margin: 8rem auto;
