@@ -24,7 +24,8 @@ Grey dark 3: #999
   --color-grey-dark-1: #2d4059;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3); }
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --line: 1px solid var(--color-grey-light-2); }
 
 * {
   margin: 0;
@@ -148,7 +149,7 @@ body {
     left: 0;
     height: 100%;
     width: 3px;
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary);
     transform: scaleY(0);
     transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
   .side-nav__item:hover::before {
@@ -190,7 +191,7 @@ body {
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-grey-light-2); }
+  border-bottom: var(--line); }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
@@ -273,7 +274,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: white;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -291,4 +292,41 @@ body {
 .hotel-view {
   background-color: white;
   flex: 1;
-  height: 80rem; }
+  height: 100%; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line); }
+
+.description {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  flex: 0 0 60%;
+  padding: 3rem;
+  margin-right: 4.5rem; }
+  .description__photo {
+    width: 100%;
+    display: block; }
+
+.user-reviews {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  flex: 1; }
+  .user-reviews__hotspot {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-primary);
+    padding: 2rem 0; }
+  .user-reviews__list {
+    text-align: center;
+    list-style: none; }
+  .user-reviews__item {
+    padding: 1rem 0;
+    font-size: 1.2rem; }
+  .user-reviews__btn {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 300; }
