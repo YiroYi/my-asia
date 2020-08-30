@@ -191,6 +191,60 @@
   margin-bottom: 1rem;
 }
 
-
-
 /*SIDE BAR*/
+
+/*Content*/
+
+.gallery {
+  display: flex;
+  &__item {
+
+  }
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+
+
+  &__heading {
+
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary)
+  }
+
+  &__location {
+
+  }
+
+  &__rating {
+
+  }
+
+  &__rating-average {
+
+  }
+
+  &__rating-count {
+
+  }
+
+}
+
+
+/*Content*/
+
